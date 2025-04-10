@@ -20,6 +20,60 @@
   <link rel="stylesheet" href="assets/css/textRotate.css" />
   <link rel="stylesheet" href="assets/css/select2.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* ul.st-tab-links {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 16px; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+*/
+/* ul.st-tab-links li {
+  flex: 1 1 auto; 
+  max-width: 200px; 
+  box-sizing: border-box; 
+} */
+
+
+.st-package-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.package-card {
+  flex: 1 1 calc(33.333% - 40px);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: 600;
+  color: #222;
+  transition: transform 0.3s ease;
+  min-width: 250px;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.package-card span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+  </style>
 </head>
 
 <body>
@@ -96,11 +150,11 @@
       <div class="st-hero st-style1 st-type1">
         <div class="container">
           <div class="st-hero-text">
-            <h1 class="st-hero-title">Always Laugh  <br>When you Can.</h1>
+            <h1 class="st-hero-title">Best Multispecialty Hospital in <br>Banashankari second stage, Bangalore</h1>
             <!-- <h1 class="st-hero-title">Wellness Builds <br>Upon the Medical.</h1> -->
             <!-- <h1 class="st-hero-title">Way to get happy. <br>Best promises.</h1> -->
-            <div class="st-hero-subtitle">Lorem ipsum dolor sit amet, consectetur mag. <br>
-            Tempor incididunt ut labore et dolore  elit.</div>
+            <!-- <div class="st-hero-subtitle">Lorem ipsum dolor sit amet, consectetur mag. <br>
+            Tempor incididunt ut labore et dolore  elit.</div> -->
             <div class="st-hero-btn">
               <a href="#department" class="st-btn st-style1 st-color3 st-smooth-move">Departments</a>
             </div>
@@ -177,71 +231,7 @@
     <!-- End Hero Seciton -->
 
     <!-- Start Feature Seciton -->
-    <section>
-      <div class="st-height-b120 st-height-lg-b80"></div>
-      <div class="container">
-      
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon st-purple-box">
-                <img
-                  src="assets/kg/Neurology.svg"
-                  alt="Qualified Doctors Icon"
-                  width="50"
-                  height="50"
-                />
-              </div>
-              <h2 class="st-iconbox-title">Neurology</h2>
-              <div class="st-iconbox-text">
-                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                tempor inc ididunt utid labore.
-              </div>
-            </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
-          </div>
-          <!-- .col -->
-          <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon st-green-box">
-                <img
-                src="assets/kg/Gynecology.svg"
-                alt="Qualified Doctors Icon"
-                width="50"
-                height="50"
-              />
-              </div>
-              <h2 class="st-iconbox-title">Gynecology</h2>
-              <div class="st-iconbox-text">
-                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                tempor inc ididunt utid labore.
-              </div>
-            </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
-          </div>
-          <!-- .col -->
-          <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon st-red-box">
-                <img
-                  src="assets/kg/orthopedic.svg"
-                  alt="Qualified Doctors Icon"
-                  width="50"
-                  height="50"
-                />
-              </div>
-              <h2 class="st-iconbox-title">orthopedic</h2>
-              <div class="st-iconbox-text">
-                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                tempor inc ididunt utid labore.
-              </div>
-            </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
-          </div>
-          <!-- .col -->
-        </div>
-      </div>
-    </section>
+    
     <!-- End Feature Seciton -->
 
     <style>
@@ -280,20 +270,86 @@
   background: #fff;
   color: #3fbbc0;
 }
-    </style>
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
+.st-feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
 
-        <div class="text-center">
-          <h3>In an emergency? Need help now?</h3>
-          <p>Call emergency services immediately for prompt assistance. Your safety is our top priority. Stay calm, provide details, and follow instructions</p>
-          <a class="cta-btn scrollto" href="#appointment">Make an Make an Appointment</a>
-        </div>
+.st-feature-list li {
+  font-size: 16px;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 30px;
+}
 
-      </div>
-    </section><!-- End Cta Section -->
+.st-feature-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.tab-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: none; 
+}
+
+.tab-scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.arrow-btn {
+  background-color: #0cb8b6;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.left-arrow {
+  margin-left: 5px;
+ position: relative;
+ right: 8px;
+}
+
+.right-arrow {
+  position: relative;
+  margin-right: 5px;
+  left: 9px;
+  
+}
+</style>
+
+
 
     <!-- Start About Seciton -->
     <section class="st-about-wrap" id="about">
@@ -309,7 +365,7 @@
             <div class="st-seperator-center"><img src="assets/img/icons/4.png" alt="icon"></div>
             <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
           </div>
-          <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div>
+          <!-- <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div> -->
         </div>
         <div class="st-height-b40 st-height-lg-b40"></div>
       </div>
@@ -319,11 +375,12 @@
             <div class="st-vertical-middle">
               <div class="st-vertical-middle-in">
                 <div class="st-text-block st-style1">
-                  <h2 class="st-text-block-title">A hospital is a health care institution providing patient treatment with medical.</h2>
+                  <h2 class="st-text-block-title">Best Multispecialty Hospital in Banashankari second stage, Bangalore</h2>
                   <div class="st-height-b20 st-height-lg-b20"></div>
                   <div class="st-text-block-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc laboris nisi ut aliquip.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt labore et dolore magna aliqua.</p>
+                    <p>Welcome to KG Multispecialty Hospital, your trusted 24/7 healthcare partner in Banashankari second stage. With a strong foundation of compassionate care, advanced technology, and skilled professionals, we are committed to delivering the best outcomes across all medical specialties. Whether it's emergency care or routine checkups, we're here for you—day and night.</p>
+                    <p>Strategically located in Banashankari second stage, our hospital features cutting-edge infrastructure and a wide range of departments, all under one roof. From preventive screenings to complex surgeries, we provide timely and affordable care with a focus on quality and patient comfort. Our expert team ensures personalized attention throughout the healing journey.</p>
+                    <p>We are more than just a hospital—we are a community health hub. Our 24/7 multispecialty services, modern diagnostic tools, and holistic approach make us the first choice for families seeking dependable medical support. The hospital houses 50 beds, including 8 ICU beds for critical cases and 4 NICU beds for neonatal intensive care—ensuring readiness for all patient needs.</p>
                   </div>
                   <div class="st-height-b25 st-height-lg-b25"></div>
                  
@@ -355,17 +412,21 @@
             <div class="st-seperator-center"><img src="assets/img/icons/4.png" alt="icon"></div>
             <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
           </div>
-          <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div>
+          <!-- <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div> -->
         </div>
         <div class="st-height-b40 st-height-lg-b40"></div>
       </div>
       <div class="container">
         <div class="st-tabs st-fade-tabs st-style1">
-          <ul class="st-tab-links st-style1 st-mp0">
-            <li class="st-tab-title active ">
+         
+          <div class="tab-container">
+            <button class="arrow-btn left-arrow"><i class="fa-solid fa-less-than"></i></button> <!-- Left Arrow --> 
+          
+          <ul class="st-tab-links st-style1 st-mp0 tab-scroll">
+            <li class="st-tab-title active">
               <a href="#Crutches" class="st-blue-box">
-                <svg   enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g><path d="m30.991 30h30v251.001l60.004 80.005v150.994h30v-150.994l60.004-80.005v-251.001h30v-30h-210.008zm60 231.001v-70.006h90.008v70.006zm75.008 30-30.004 40.005-30.004-40.005zm15-130.006h-90.008v-130.995h90.008z"/><path d="m481.009 0h-210.008v30h30v251.001l60.004 80.005v150.994h30v-150.994l60.004-80.005v-251.001h30zm-150.008 261.001v-70.006h90.008v70.006zm75.008 30-30.004 40.005-30.004-40.005zm15-130.006h-90.008v-130.995h90.008z"/></g></svg>
-                <span>Crutches</span>
+                <svg enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g><path d="m30.991 30h30v251.001l60.004 80.005v150.994h30v-150.994l60.004-80.005v-251.001h30v-30h-210.008zm60 231.001v-70.006h90.008v70.006zm75.008 30-30.004 40.005-30.004-40.005zm15-130.006h-90.008v-130.995h90.008z"/><path d="m481.009 0h-210.008v30h30v251.001l60.004 80.005v150.994h30v-150.994l60.004-80.005v-251.001h30zm-150.008 261.001v-70.006h90.008v70.006zm75.008 30-30.004 40.005-30.004-40.005zm15-130.006h-90.008v-130.995h90.008z"/></g></svg>
+                <span>General Medicine</span>
               </a>
             </li>
             <li class="st-tab-title">
@@ -403,19 +464,19 @@
                   <polygon points="307.312,232 293.656,218.344 282.344,229.656 296,243.312 296,264 312,264 312,248 328,248 328,232    "/>
                 </g>
                 </svg>
-                <span>X-ray</span>
+                <span>Gynecology</span>
               </a>
             </li>
             <li class="st-tab-title">
               <a href="#Pulmonary" class="st-green-box">
                 <svg   enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g><path d="m466.257 66.381c-57.472-57.474-148.962-60.702-210.257-9.683-61.293-51.019-152.785-47.79-210.257 9.683-29.498 29.497-45.743 68.716-45.743 110.432s16.245 80.935 45.743 110.432l199.651 199.651c2.813 2.813 6.628 4.394 10.606 4.394s7.793-1.581 10.606-4.394l199.651-199.651c29.498-29.498 45.743-68.717 45.743-110.432s-16.245-80.935-45.743-110.432zm-399.301 21.212c24.598-24.597 56.908-36.896 89.219-36.896s64.622 12.299 89.219 36.896c5.857 5.858 15.355 5.858 21.213 0 49.196-49.194 129.243-49.195 178.438 0 23.83 23.832 36.955 55.518 36.955 89.22 0 22.931-6.082 44.926-17.472 64.151h-90l-55.797-83.695c-2.852-4.278-7.678-6.806-12.838-6.675-5.14.122-9.86 2.869-12.505 7.278l-80.491 134.151-46.665-46.665c-2.813-2.813-6.628-4.394-10.606-4.394h-108.154c-11.39-19.226-17.472-41.22-17.472-64.151 0-33.703 13.125-65.388 36.956-89.22zm189.044 367.483-184.112-184.112h77.524l55.856 55.856c2.83 2.83 6.652 4.394 10.605 4.394.609 0 1.222-.037 1.833-.112 4.584-.564 8.653-3.209 11.03-7.17l78.18-130.3 47.102 70.653c2.782 4.173 7.466 6.68 12.481 6.68h73.612z"/></g></svg>
-                <span>Pulmonary</span>
+                <span>Orthopedics</span>
               </a>
             </li>
             <li class="st-tab-title">
               <a href="#Cardiology" class="st-dip-blue-box">
                 <svg height="512pt" viewBox="-73 0 512 512.001" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m335.832031 313.679688c.011719.023437.023438.046874.03125.066406 1.699219 3.804687 5.304688 6.035156 9.128907 6.035156 1.367187 0 2.761718-.285156 4.105468-.882812 5.117188-2.273438 7.328125-8.105469 5.039063-13.277344-2.285157-5.171875-8.089844-7.457032-13.214844-5.203125-5.125 2.257812-7.359375 8.082031-5.089844 13.261719zm0 0"/><path d="m363.421875 342.824219c-.859375-5.453125-5.980469-9.179688-11.4375-8.3125-5.453125.859375-9.175781 5.980469-8.3125 11.4375 2.242187 14.207031 2.859375 28.6875 1.828125 43.035156-2.390625 33.261719-19.203125 63.617187-46.128906 83.289063l-6.761719 4.9375c-13.246094 9.675781-28.914063 14.789062-45.316406 14.789062-5.9375 0-11.878907-.691406-17.652344-2.054688l-26.5-6.257812c-51.21875-12.09375-97.9375-40.515625-131.550781-80.027344-14.941406-17.566406-21.679688-30.34375-26.855469-43.503906.414063-1.335938.5625-2.777344.367187-4.257812-.054687-.429688-4.976562-43.621094 55.933594-71.347657 41.773438-19.015625 61.316406-51.535156 68.117188-65.554687 45.796875 6.320312 61.558594 19.210937 62.730468 20.222656 2.417969 2.5625 5.753907 3.390625 9.207032 2.609375.832031-.1875 1.65625-.367187 2.476562-.539063 32.042969-6.726562 65.09375 10.339844 78.601563 40.5625 2.253906 5.042969 8.167969 7.304688 13.210937 5.050782 5.042969-2.253906 7.300782-8.167969 5.050782-13.210938-7.652344-17.113281-20.519532-31.523437-36.539063-41.097656.007813-.035156.023437-.066406.035156-.101562 2.015625-6.441407 3.035157-13.160157 3.035157-19.964844 0-1.363282-.054688-2.714844-.132813-4.058594h6.9375c5.519531 0 10-4.476562 10-10s-4.480469-10-10-10h-11.304687c-2.570313-6.632812-6.160157-12.761719-10.59375-18.179688l4.527343-4.527343c3.90625-3.90625 3.90625-10.238281 0-14.144531-3.90625-3.902344-10.234375-3.902344-14.140625 0l-5.234375 5.234374c-8.109375-5.382812-17.457031-9.042968-27.519531-10.457031 13.25-10.597656 30.65625-15.617187 51.867188-14.894531 2.707031.101562 5.339843-.921875 7.292968-2.804688 1.949219-1.882812 3.046875-4.476562 3.046875-7.1875v-38.09375c0-5.203124-3.988281-9.535156-9.175781-9.964843-1.621094-.132813-20.347656-1.558594-44.695312 1.371093-10.886719-21.066406-26.210938-36.714843-43.835938-45.402343l7.078125-10.566407c3.074219-4.589843 1.84375-10.800781-2.746094-13.871093-4.585937-3.074219-10.796875-1.847657-13.871093 2.742187l-10.132813 15.128906c-4.320313-.796874-8.722656-1.222656-13.179687-1.222656-2.570313 0-5.128907.144532-7.664063.414063v-12.042969c0-5.523438-4.476563-10-10-10s-10 4.476562-10 10v17.101562c-9.382813 3.820313-18.269531 9.589844-26.386719 17.230469-6.074218 5.714844-11.539062 12.324219-16.332031 19.65625-3.75-7.398437-11.429687-12.488281-20.277344-12.488281h-27.144531c-12.53125 0-22.726562 10.195312-22.726562 22.726562v102.222657c-5.03125 3.910156-9.882813 8.492187-14.523438 13.785156-21.921875 25.003906-26.285156 57.769531-26.0859375 80.851563.2265625 26.109374 6.5390625 52.726562 16.5156255 69.792968 1.507812 4.039063 2.863281 7.933594 4.179687 11.710938 6.722656 19.273437 13.070313 37.480468 35.652344 64.027344 36.355469 42.738281 86.851562 73.46875 142.191406 86.535156l26.496094 6.257812c7.28125 1.71875 14.765625 2.589844 22.25 2.589844 20.671875 0 40.421875-6.445312 57.109375-18.636719l6.761718-4.9375c31.6875-23.148437 51.472657-58.867187 54.285157-98.007812 1.140625-15.867188.457031-31.878907-2.027344-47.59375zm-122.03125-121.492188c-4.03125-2.804687-10.902344-6.800781-21.640625-10.808593.828125-9.625 3.621094-27.761719 13.011719-44.207032 2.433593-.382812 4.917969-.585937 7.398437-.585937 25.804688 0 46.800782 20.996093 46.800782 46.800781 0 3.972656-.503907 7.894531-1.480469 11.695312-14.195313-4.601562-29.398438-5.636718-44.089844-2.894531zm50.316406-128.277343v18.5c-24.773437 1.074218-45.210937 9.347656-60.859375 24.652343-21.976562 21.503907-28.605468 51.375-30.59375 68.347657-9.566406-2.386719-20.925781-4.539063-34.367187-6.144532-3.039063-2.816406-6.066407-5.472656-9.082031-7.980468.015624-.242188.035156-.480469.035156-.726563 0-26.859375 8.679687-48.484375 25.792968-64.269531 32.546876-30.019532 87.417969-32.589844 109.074219-32.378906zm-110.558593-51.425782c5.011718 0 9.949218.738282 14.753906 2.140625.003906 0 .011718.003907.015625.003907 15.9375 4.65625 30.375 16.753906 40.980469 34.527343-23.246094 5.011719-48.398438 14.539063-67.765626 32.375-18.441406 16.980469-29.050781 39.042969-31.652343 65.710938-8.183594-5.078125-16.28125-8.980469-24.265625-11.6875v-57.824219c.171875-.402344.332031-.8125.457031-1.242188 11.027344-38.28125 38.144531-64.003906 67.476563-64.003906zm-120.53125 32.597656c0-1.503906 1.222656-2.726562 2.726562-2.726562h27.144531c1.503907 0 2.726563 1.222656 2.726563 2.726562v86.167969c-3.351563-.292969-6.675782-.371093-9.980469-.222656-7.824219.347656-15.371094 1.949219-22.617187 4.769531zm-19.484376 129.195313c12.925782-14.746094 27.390626-22.574219 42.992188-23.269531 19.894531-.890625 42.785156 9.921875 66.394531 31.3125-6.105469 11.980468-23.09375 39.097656-57.769531 54.882812-38.269531 17.417969-54.605469 41.050782-61.574219 57.804688-.117187.285156-.226562.5625-.34375.84375-12.640625-28.003906-19.4375-87.65625 10.300781-121.574219zm0 0"/><path d="m126.820312 402.167969c-4.25-3.527344-10.554687-2.9375-14.082031 1.3125-3.523437 4.25-2.9375 10.554687 1.3125 14.078125 27.050781 22.445312 59.449219 38.578125 93.6875 46.664062.773438.183594 1.546875.269532 2.308594.269532 4.53125 0 8.636719-3.101563 9.722656-7.703126 1.269531-5.375-2.058593-10.761718-7.433593-12.03125-31.253907-7.378906-60.824219-22.109374-85.515626-42.589843zm0 0"/><path d="m87.867188 376.636719c-4.175782 3.617187-4.648438 9.902343-1.035157 14.074219 1.980469 2.375 4.824219 3.597656 7.691407 3.597656 2.257812 0 4.527343-.757813 6.394531-2.316406 4.242187-3.535157 4.816406-9.839844 1.28125-14.082032l-.203125-.238281c-3.617188-4.175781-9.957032-4.652344-14.128906-1.035156zm0 0"/></svg>
-                <span>Cardiology</span>
+                <span>Urology</span>
               </a>
             </li>
             <li class="st-tab-title">
@@ -439,7 +500,7 @@
                         c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
                       </g>
                     </svg>
-                    <span>Dental care</span>
+                    <span>Pediatrics</span>
                 </a>
             </li>
             <li class="st-tab-title">
@@ -595,10 +656,133 @@
                       C495.687,201.451,496.111,205.257,495.64,209.173z" />
                     </g>
                 </svg>
-                <span>Neurology</span>
+                <span>Cardiology</span>
               </a>
             </li>
+            <li class="st-tab-title">
+              <a href="#Nutrition" class="st-orange-box">
+                  <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.335 480.335" xml:space="preserve">
+                    <g><path d="M341.311,0c-6.249,0.011-12.488,0.5-18.662,1.462c-14.488,2.469-28.449,7.393-41.28,14.56
+                      c-25.694,13.956-56.706,13.956-82.4,0c-12.835-7.142-26.796-12.039-41.28-14.48C90.764-8.885,28.058,36.915,17.63,103.84
+                      c-0.958,6.148-1.447,12.36-1.462,18.582v13.6c-0.142,22.285,5.925,44.169,17.52,63.2c30.684,49.633,50.202,105.349,57.2,163.28
+                      l8.88,73.52c2.439,22.858,20.241,41.057,43.04,44c26.339,3.001,50.124-15.918,53.125-42.258c0.027-0.234,0.052-0.468,0.075-0.702
+                      l16.72-156.16c1.639-15.155,15.253-26.111,30.408-24.472c12.894,1.394,23.078,11.578,24.472,24.472l16.72,155.92
+                      c2.474,24.619,23.257,43.324,48,43.2h1.36c23.909,0.276,44.375-17.086,48-40.72l12.4-77.84c9.56-57.745,28.475-113.545,56-165.2
+                      c9.255-17.588,14.087-37.166,14.08-57.04v-16.8C464.048,54.69,409.043-0.12,341.311,0z M448.169,139.222
+                      c-0.046,17.675-4.442,35.066-12.8,50.64c-28.409,52.741-47.746,109.885-57.2,169.04l-12.48,77.92
+                      c-2.393,15.777-16.043,27.38-32,27.2h-1.36c-16.523,0.079-30.389-12.435-32-28.88l-16.72-155.12
+                      c-1.998-23.997-23.071-41.83-47.068-39.831c-20.83,1.735-37.499,18.008-39.732,38.791l-16.64,155.28
+                      c-1.287,14.018-11.354,25.662-25.04,28.96c-17.185,4.123-34.459-6.466-38.582-23.652c-0.318-1.326-0.551-2.672-0.698-4.028
+                      l-10.24-85.2c-7.763-56.732-27.566-111.148-58.08-159.6c-9.991-16.508-15.3-35.424-15.36-54.72v-13.6
+                      C32.174,63.659,79.816,16.027,138.579,16.032c18.05,0.002,35.804,4.596,51.589,13.349c31.071,17.367,68.929,17.367,100,0v0.08
+                      c51.39-28.498,116.153-9.94,144.651,41.45c8.741,15.762,13.334,33.486,13.349,51.51V139.222z" /><path d="M308.089,65.062c-21.091,10.424-44.401,15.559-67.92,14.96c-23.572,0.625-46.941-4.51-68.08-14.96
+                      c-3.845-2.158-8.711-0.798-10.88,3.04c-2.158,3.845-0.798,8.711,3.04,10.88c23.519,11.841,49.597,17.694,75.92,17.04
+                      c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
+                    </g>
+                  </svg>
+                  <span>Nutrition</span>
+              </a>
+          </li>
+            <li class="st-tab-title">
+              <a href="#Physiotherapy" class="st-orange-box">
+                  <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.335 480.335" xml:space="preserve">
+                    <g><path d="M341.311,0c-6.249,0.011-12.488,0.5-18.662,1.462c-14.488,2.469-28.449,7.393-41.28,14.56
+                      c-25.694,13.956-56.706,13.956-82.4,0c-12.835-7.142-26.796-12.039-41.28-14.48C90.764-8.885,28.058,36.915,17.63,103.84
+                      c-0.958,6.148-1.447,12.36-1.462,18.582v13.6c-0.142,22.285,5.925,44.169,17.52,63.2c30.684,49.633,50.202,105.349,57.2,163.28
+                      l8.88,73.52c2.439,22.858,20.241,41.057,43.04,44c26.339,3.001,50.124-15.918,53.125-42.258c0.027-0.234,0.052-0.468,0.075-0.702
+                      l16.72-156.16c1.639-15.155,15.253-26.111,30.408-24.472c12.894,1.394,23.078,11.578,24.472,24.472l16.72,155.92
+                      c2.474,24.619,23.257,43.324,48,43.2h1.36c23.909,0.276,44.375-17.086,48-40.72l12.4-77.84c9.56-57.745,28.475-113.545,56-165.2
+                      c9.255-17.588,14.087-37.166,14.08-57.04v-16.8C464.048,54.69,409.043-0.12,341.311,0z M448.169,139.222
+                      c-0.046,17.675-4.442,35.066-12.8,50.64c-28.409,52.741-47.746,109.885-57.2,169.04l-12.48,77.92
+                      c-2.393,15.777-16.043,27.38-32,27.2h-1.36c-16.523,0.079-30.389-12.435-32-28.88l-16.72-155.12
+                      c-1.998-23.997-23.071-41.83-47.068-39.831c-20.83,1.735-37.499,18.008-39.732,38.791l-16.64,155.28
+                      c-1.287,14.018-11.354,25.662-25.04,28.96c-17.185,4.123-34.459-6.466-38.582-23.652c-0.318-1.326-0.551-2.672-0.698-4.028
+                      l-10.24-85.2c-7.763-56.732-27.566-111.148-58.08-159.6c-9.991-16.508-15.3-35.424-15.36-54.72v-13.6
+                      C32.174,63.659,79.816,16.027,138.579,16.032c18.05,0.002,35.804,4.596,51.589,13.349c31.071,17.367,68.929,17.367,100,0v0.08
+                      c51.39-28.498,116.153-9.94,144.651,41.45c8.741,15.762,13.334,33.486,13.349,51.51V139.222z" /><path d="M308.089,65.062c-21.091,10.424-44.401,15.559-67.92,14.96c-23.572,0.625-46.941-4.51-68.08-14.96
+                      c-3.845-2.158-8.711-0.798-10.88,3.04c-2.158,3.845-0.798,8.711,3.04,10.88c23.519,11.841,49.597,17.694,75.92,17.04
+                      c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
+                    </g>
+                  </svg>
+                  <span>Physiotherapy</span>
+              </a>
+          </li>
+            <li class="st-tab-title">
+              <a href="#Nutrition" class="st-orange-box">
+                  <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.335 480.335" xml:space="preserve">
+                    <g><path d="M341.311,0c-6.249,0.011-12.488,0.5-18.662,1.462c-14.488,2.469-28.449,7.393-41.28,14.56
+                      c-25.694,13.956-56.706,13.956-82.4,0c-12.835-7.142-26.796-12.039-41.28-14.48C90.764-8.885,28.058,36.915,17.63,103.84
+                      c-0.958,6.148-1.447,12.36-1.462,18.582v13.6c-0.142,22.285,5.925,44.169,17.52,63.2c30.684,49.633,50.202,105.349,57.2,163.28
+                      l8.88,73.52c2.439,22.858,20.241,41.057,43.04,44c26.339,3.001,50.124-15.918,53.125-42.258c0.027-0.234,0.052-0.468,0.075-0.702
+                      l16.72-156.16c1.639-15.155,15.253-26.111,30.408-24.472c12.894,1.394,23.078,11.578,24.472,24.472l16.72,155.92
+                      c2.474,24.619,23.257,43.324,48,43.2h1.36c23.909,0.276,44.375-17.086,48-40.72l12.4-77.84c9.56-57.745,28.475-113.545,56-165.2
+                      c9.255-17.588,14.087-37.166,14.08-57.04v-16.8C464.048,54.69,409.043-0.12,341.311,0z M448.169,139.222
+                      c-0.046,17.675-4.442,35.066-12.8,50.64c-28.409,52.741-47.746,109.885-57.2,169.04l-12.48,77.92
+                      c-2.393,15.777-16.043,27.38-32,27.2h-1.36c-16.523,0.079-30.389-12.435-32-28.88l-16.72-155.12
+                      c-1.998-23.997-23.071-41.83-47.068-39.831c-20.83,1.735-37.499,18.008-39.732,38.791l-16.64,155.28
+                      c-1.287,14.018-11.354,25.662-25.04,28.96c-17.185,4.123-34.459-6.466-38.582-23.652c-0.318-1.326-0.551-2.672-0.698-4.028
+                      l-10.24-85.2c-7.763-56.732-27.566-111.148-58.08-159.6c-9.991-16.508-15.3-35.424-15.36-54.72v-13.6
+                      C32.174,63.659,79.816,16.027,138.579,16.032c18.05,0.002,35.804,4.596,51.589,13.349c31.071,17.367,68.929,17.367,100,0v0.08
+                      c51.39-28.498,116.153-9.94,144.651,41.45c8.741,15.762,13.334,33.486,13.349,51.51V139.222z" /><path d="M308.089,65.062c-21.091,10.424-44.401,15.559-67.92,14.96c-23.572,0.625-46.941-4.51-68.08-14.96
+                      c-3.845-2.158-8.711-0.798-10.88,3.04c-2.158,3.845-0.798,8.711,3.04,10.88c23.519,11.841,49.597,17.694,75.92,17.04
+                      c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
+                    </g>
+                  </svg>
+                  <span>Nutrition</span>
+              </a>
+          </li>
+            <li class="st-tab-title">
+              <a href="#CT" class="st-orange-box">
+                  <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.335 480.335" xml:space="preserve">
+                    <g><path d="M341.311,0c-6.249,0.011-12.488,0.5-18.662,1.462c-14.488,2.469-28.449,7.393-41.28,14.56
+                      c-25.694,13.956-56.706,13.956-82.4,0c-12.835-7.142-26.796-12.039-41.28-14.48C90.764-8.885,28.058,36.915,17.63,103.84
+                      c-0.958,6.148-1.447,12.36-1.462,18.582v13.6c-0.142,22.285,5.925,44.169,17.52,63.2c30.684,49.633,50.202,105.349,57.2,163.28
+                      l8.88,73.52c2.439,22.858,20.241,41.057,43.04,44c26.339,3.001,50.124-15.918,53.125-42.258c0.027-0.234,0.052-0.468,0.075-0.702
+                      l16.72-156.16c1.639-15.155,15.253-26.111,30.408-24.472c12.894,1.394,23.078,11.578,24.472,24.472l16.72,155.92
+                      c2.474,24.619,23.257,43.324,48,43.2h1.36c23.909,0.276,44.375-17.086,48-40.72l12.4-77.84c9.56-57.745,28.475-113.545,56-165.2
+                      c9.255-17.588,14.087-37.166,14.08-57.04v-16.8C464.048,54.69,409.043-0.12,341.311,0z M448.169,139.222
+                      c-0.046,17.675-4.442,35.066-12.8,50.64c-28.409,52.741-47.746,109.885-57.2,169.04l-12.48,77.92
+                      c-2.393,15.777-16.043,27.38-32,27.2h-1.36c-16.523,0.079-30.389-12.435-32-28.88l-16.72-155.12
+                      c-1.998-23.997-23.071-41.83-47.068-39.831c-20.83,1.735-37.499,18.008-39.732,38.791l-16.64,155.28
+                      c-1.287,14.018-11.354,25.662-25.04,28.96c-17.185,4.123-34.459-6.466-38.582-23.652c-0.318-1.326-0.551-2.672-0.698-4.028
+                      l-10.24-85.2c-7.763-56.732-27.566-111.148-58.08-159.6c-9.991-16.508-15.3-35.424-15.36-54.72v-13.6
+                      C32.174,63.659,79.816,16.027,138.579,16.032c18.05,0.002,35.804,4.596,51.589,13.349c31.071,17.367,68.929,17.367,100,0v0.08
+                      c51.39-28.498,116.153-9.94,144.651,41.45c8.741,15.762,13.334,33.486,13.349,51.51V139.222z" /><path d="M308.089,65.062c-21.091,10.424-44.401,15.559-67.92,14.96c-23.572,0.625-46.941-4.51-68.08-14.96
+                      c-3.845-2.158-8.711-0.798-10.88,3.04c-2.158,3.845-0.798,8.711,3.04,10.88c23.519,11.841,49.597,17.694,75.92,17.04
+                      c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
+                    </g>
+                  </svg>
+                  <span>CT Scan</span>
+              </a>
+          </li>
+            <li class="st-tab-title">
+              <a href="#Modular_Operation_Theatres" class="st-orange-box">
+                  <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.335 480.335" xml:space="preserve">
+                    <g><path d="M341.311,0c-6.249,0.011-12.488,0.5-18.662,1.462c-14.488,2.469-28.449,7.393-41.28,14.56
+                      c-25.694,13.956-56.706,13.956-82.4,0c-12.835-7.142-26.796-12.039-41.28-14.48C90.764-8.885,28.058,36.915,17.63,103.84
+                      c-0.958,6.148-1.447,12.36-1.462,18.582v13.6c-0.142,22.285,5.925,44.169,17.52,63.2c30.684,49.633,50.202,105.349,57.2,163.28
+                      l8.88,73.52c2.439,22.858,20.241,41.057,43.04,44c26.339,3.001,50.124-15.918,53.125-42.258c0.027-0.234,0.052-0.468,0.075-0.702
+                      l16.72-156.16c1.639-15.155,15.253-26.111,30.408-24.472c12.894,1.394,23.078,11.578,24.472,24.472l16.72,155.92
+                      c2.474,24.619,23.257,43.324,48,43.2h1.36c23.909,0.276,44.375-17.086,48-40.72l12.4-77.84c9.56-57.745,28.475-113.545,56-165.2
+                      c9.255-17.588,14.087-37.166,14.08-57.04v-16.8C464.048,54.69,409.043-0.12,341.311,0z M448.169,139.222
+                      c-0.046,17.675-4.442,35.066-12.8,50.64c-28.409,52.741-47.746,109.885-57.2,169.04l-12.48,77.92
+                      c-2.393,15.777-16.043,27.38-32,27.2h-1.36c-16.523,0.079-30.389-12.435-32-28.88l-16.72-155.12
+                      c-1.998-23.997-23.071-41.83-47.068-39.831c-20.83,1.735-37.499,18.008-39.732,38.791l-16.64,155.28
+                      c-1.287,14.018-11.354,25.662-25.04,28.96c-17.185,4.123-34.459-6.466-38.582-23.652c-0.318-1.326-0.551-2.672-0.698-4.028
+                      l-10.24-85.2c-7.763-56.732-27.566-111.148-58.08-159.6c-9.991-16.508-15.3-35.424-15.36-54.72v-13.6
+                      C32.174,63.659,79.816,16.027,138.579,16.032c18.05,0.002,35.804,4.596,51.589,13.349c31.071,17.367,68.929,17.367,100,0v0.08
+                      c51.39-28.498,116.153-9.94,144.651,41.45c8.741,15.762,13.334,33.486,13.349,51.51V139.222z" /><path d="M308.089,65.062c-21.091,10.424-44.401,15.559-67.92,14.96c-23.572,0.625-46.941-4.51-68.08-14.96
+                      c-3.845-2.158-8.711-0.798-10.88,3.04c-2.158,3.845-0.798,8.711,3.04,10.88c23.519,11.841,49.597,17.694,75.92,17.04
+                      c26.323,0.654,52.401-5.199,75.92-17.04c3.844-2.209,5.169-7.116,2.96-10.96C316.84,64.178,311.933,62.853,308.089,65.062z" />
+                    </g>
+                  </svg>
+                  <span>Modular Operation Theatres</span>
+              </a>
+          </li>
           </ul>
+          <button class="arrow-btn right-arrow"><i class="fa-solid fa-greater-than"></i></button> <!-- Right Arrow -->
+        </div>
+        
           <div class="st-height-b25 st-height-lg-b25"></div>
           <div class="tab-content">
             <div id="Crutches" class="st-tab active">
@@ -612,12 +796,12 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>Crutches</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>General Medicine</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle"></h4> -->
+                          <div class="st-imagebox-text">Provides expert care for a wide range of illnesses like fever, infections, hypertension, and diabetes. Our internal medicine team ensures accurate diagnosis, medical management, and preventive health education for all age groups.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -636,12 +820,12 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>X-ray</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>Gynecology</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">From adolescence to menopause, we offer complete women’s healthcare—pregnancy care, menstrual disorders, fertility consultation, and surgeries. Our gynecology wing now includes dedicated services and specialists for holistic support.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -660,12 +844,12 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>Pulmonary</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>Orthopedics</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Manages bone, joint, and muscle-related issues with modern techniques. From fracture care to joint replacements, our orthopedic department focuses on quick recovery, pain management, and rehabilitation through physiotherapy.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -684,12 +868,12 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>Cardiology</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>Urology</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Diagnosis and treatment for urinary and male reproductive issues such as kidney stones, prostate enlargement, and infections. Our urologists combine medical and surgical approaches for long-term solutions.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -708,12 +892,12 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>DentalCare</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>Pediatrics</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Child-friendly care for newborns to teenagers. We handle vaccinations, infections, growth monitoring, and emergency care. Our NICU setup supports critical neonatal care with round-the-clock pediatricians.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -732,12 +916,108 @@
                     <div class="st-vertical-middle">
                       <div class="st-vertical-middle-in">
                         <div class="st-imagebox-info">
-                          <h2 class="st-imagebox-title">Welcome to our <span>Neurology</span></h2>
-                          <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4>
-                          <div class="st-imagebox-text">Oillum abrem deleniti adipisci suscipit dignissimos. remaining essentially unchanged. It was popularised in the with the . Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                          <h2 class="st-imagebox-title">Welcome to our <span>Cardiology</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Advanced heart care for conditions like chest pain, high BP, and heart disease. Our team performs diagnostics like ECG and ECHO, and provides emergency intervention and lifestyle guidance.</div>
                         </div>
                         <div class="st-imagebox-btn">
-                          <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a>
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Nutrition" class="st-tab">
+              <div class="st-imagebox st-style2">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="st-imagebox-img"><img src="assets/img/neurology.png" alt="service"></div>
+                    <div class="st-height-b0 st-height-lg-b30"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="st-vertical-middle">
+                      <div class="st-vertical-middle-in">
+                        <div class="st-imagebox-info">
+                          <h2 class="st-imagebox-title">Welcome to our <span>Nutrition</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">We offer personalized diet counseling for managing lifestyle diseases, weight loss, pregnancy nutrition, and recovery diets. Our nutritionists help you make informed food choices for a healthy life.</div>
+                        </div>
+                        <div class="st-imagebox-btn">
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Physiotherapy" class="st-tab">
+              <div class="st-imagebox st-style2">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="st-imagebox-img"><img src="assets/img/neurology.png" alt="service"></div>
+                    <div class="st-height-b0 st-height-lg-b30"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="st-vertical-middle">
+                      <div class="st-vertical-middle-in">
+                        <div class="st-imagebox-info">
+                          <h2 class="st-imagebox-title">Welcome to our <span>Physiotherapy</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Post-surgery recovery, sports injury rehab, and pain management are handled through guided therapies and exercises. Our expert physiotherapists create customized plans for mobility and strength.</div>
+                        </div>
+                        <div class="st-imagebox-btn">
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="CT" class="st-tab">
+              <div class="st-imagebox st-style2">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="st-imagebox-img"><img src="assets/img/neurology.png" alt="service"></div>
+                    <div class="st-height-b0 st-height-lg-b30"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="st-vertical-middle">
+                      <div class="st-vertical-middle-in">
+                        <div class="st-imagebox-info">
+                          <h2 class="st-imagebox-title">Welcome to our <span>CT Scan (New)</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Post-surgery recovery, sports injury rehab, and pain management are handled through guided therapies and exercises. Our expert physiotherapists create customized plans for mobility and strength.</div>
+                        </div>
+                        <div class="st-imagebox-btn">
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Modular_Operation_Theatres" class="st-tab">
+              <div class="st-imagebox st-style2">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="st-imagebox-img"><img src="assets/img/neurology.png" alt="service"></div>
+                    <div class="st-height-b0 st-height-lg-b30"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="st-vertical-middle">
+                      <div class="st-vertical-middle-in">
+                        <div class="st-imagebox-info">
+                          <h2 class="st-imagebox-title">Welcome to our <span>Modular Operation Theatres (New)</span></h2>
+                          <!-- <h4 class="st-imagebox-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae sapiente quos. </h4> -->
+                          <div class="st-imagebox-text">Our facility now includes two modular operation theatres, designed for complex surgeries in sterile, infection-controlled environments. These OTs support general surgery, orthopedics, gynecology, and emergency procedures.</div>
+                        </div>
+                        <div class="st-imagebox-btn">
+                          <!-- <a href="#" class="st-btn st-style1 st-size-medium st-color1">Read More</a> -->
                         </div>
                       </div>
                     </div>
@@ -752,6 +1032,129 @@
     </section>
     <!-- End department Section -->
     <hr>
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>In an emergency? Need help now?</h3>
+          <p>Call emergency services immediately for prompt assistance. Your safety is our top priority. Stay calm, provide details, and follow instructions</p>
+          <a class="cta-btn scrollto" href="#appointment">Make an Make an Appointment</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- Health  -->
+    <section id="health">
+      <div class="st-height-b120 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h2 class="st-section-heading-title">Health Packages</h2>
+          <div class="st-seperator">
+            <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s"></div>
+            <div class="st-seperator-center">
+              <img src="assets/img/icons/4.png" alt="icon">
+            </div>
+            <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
+          </div>
+          <div class="st-section-heading-subtitle">
+            Comprehensive health check-up packages tailored for men, women, senior citizens, and corporate employees will be provided (details to be shared by the client). These packages will focus on prevention, early detection, and overall wellness. Stay on top of your health with our specially designed health packages—covering prevention, early detection, and wellness, all at precise and affordable pricing.
+          </div>
+        </div>
+    
+        <div class="st-height-b40 st-height-lg-b40"></div>
+    
+        <!-- Health Package Cards -->
+        <div class="st-package-cards">
+          <div class="package-card">Full Body Checkup<br><span>Complete screening to assess overall health</span></div>
+          <div class="package-card">Diabetes Package<br><span>Blood sugar levels, HbA1c, and related tests</span></div>
+          <div class="package-card">Heart Checkup<br><span>ECG, ECHO, lipid profile, BP monitoring</span></div>
+          <div class="package-card">Women’s Wellness Package<br><span>Hormonal profile, thyroid, pelvic scan, etc.</span></div>
+          <div class="package-card">Senior Citizen Health Package<br><span>Bone density, cardiac, and kidney tests</span></div>
+          <div class="package-card">Kidney Function Test (KFT)<br><span>Evaluate kidney performance and health</span></div>
+          <div class="package-card">Liver Function Test (LFT)<br><span>Detect liver infections, damage, or disorders</span></div>
+          <div class="package-card">Pre-Employment Checkup<br><span>Basic fitness and vital health assessments</span></div>
+          <div class="package-card">Customized Packages<br><span>Tailored checkups based on age, gender & history</span></div>
+        </div>
+    
+        <!-- Extra Text After Cards -->
+        <div class="package-note" style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
+          We offer flexible options and doctor consultation with every package to ensure comprehensive care.
+        </div>
+    
+        <div class="st-height-b40 st-height-lg-b40"></div>
+      </div>
+    </section>
+    
+    
+    <!-- Health -->
+
+    <section>
+      <div class="st-height-b120 st-height-lg-b80"></div>
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="st-iconbox st-style1">
+              <div class="st-iconbox-icon st-purple-box">
+                <img
+                  src="assets/kg/Neurology.svg"
+                  alt="Qualified Doctors Icon"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="st-iconbox-title">Neurology</h2>
+              <div class="st-iconbox-text">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </div>
+            </div>
+            <div class="st-height-b0 st-height-lg-b30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-4">
+            <div class="st-iconbox st-style1">
+              <div class="st-iconbox-icon st-green-box">
+                <img
+                src="assets/kg/Gynecology.svg"
+                alt="Qualified Doctors Icon"
+                width="50"
+                height="50"
+              />
+              </div>
+              <h2 class="st-iconbox-title">Gynecology</h2>
+              <div class="st-iconbox-text">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </div>
+            </div>
+            <div class="st-height-b0 st-height-lg-b30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-4">
+            <div class="st-iconbox st-style1">
+              <div class="st-iconbox-icon st-red-box">
+                <img
+                  src="assets/kg/orthopedic.svg"
+                  alt="Qualified Doctors Icon"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="st-iconbox-title">orthopedic</h2>
+              <div class="st-iconbox-text">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </div>
+            </div>
+            <div class="st-height-b0 st-height-lg-b30"></div>
+          </div>
+          <!-- .col -->
+        </div>
+      </div>
+    </section>
     <!-- Start Team Section -->
     <section id="doctors">
       <div class="st-height-b120 st-height-lg-b80"></div>
@@ -1066,9 +1469,56 @@
     </section>
     <!-- End gallery Section -->
 
-    <!-- Start Before After -->
+    <!-- why Choose -->
+    <section id="why-choose">
+      <div class="st-height-b120 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h2 class="st-section-heading-title">Why Choose KG Multispecialty Hospital?</h2>
+          <div class="st-seperator">
+            <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s"></div>
+            <div class="st-seperator-center">
+              <img src="assets/img/icons/4.png" alt="icon">
+            </div>
+            <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
+          </div>
+          <div class="st-section-heading-subtitle">
+            At KG Multispecialty Hospital, we believe healthcare should be accessible, advanced, and always available. Our dedicated team, modern infrastructure, and patient-first philosophy make us a trusted choice for families in Banashankari second stage.
+          </div>
+        </div>
     
-    <!-- End Before After -->
+        <div class="st-height-b40 st-height-lg-b40"></div>
+    
+        <!-- Feature List -->
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="st-feature-list">
+              <li>24/7 Availability for emergencies and care</li>
+              <li>18+ Departments under one roof</li>
+              <li>State-of-the-Art Facilities including CT Scan & Modular OTs</li>
+              <li>Critical Care Ready with ICU and NICU beds</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="st-feature-list">
+              <li>Experienced Medical Professionals</li>
+              <li>Central Location in Banashankari second stage with easy access and parking</li>
+              <li>Patient-Centric Approach that puts your well-being first</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Extra Text After List -->
+        <div class="package-note" style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
+          Choose KG Multispecialty Hospital—Where quality care never sleeps.
+        </div>
+    
+        <div class="st-height-b40 st-height-lg-b40"></div>
+      </div>
+    </section>
+    
+    <!-- why Choose -->
+
 
     <!-- Start Testimonial Seciton -->
     <section>
@@ -1493,235 +1943,11 @@
     </section>
     <!-- End News Letter -->
 
-    <!-- Start Blog Section -->
-    <section id="blog">
-      <div class="st-height-b120 st-height-lg-b80"></div>
-      <div class="container">
-        <div class="st-section-heading st-style1">
-          <h2 class="st-section-heading-title">Latest News</h2>
-          <div class="st-seperator">
-            <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s"></div>
-            <div class="st-seperator-center"><img src="assets/img/icons/4.png" alt="icon"></div>
-            <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
-          </div>
-          <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div>
-        </div>
-        <div class="st-height-b40 st-height-lg-b40"></div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="st-post st-style3">
-              <a href="blog-details-right-sidebar.html" class="st-post-thumb st-link-hover-wrap st-zoom">
-                <img class="st-zoom-in" src="assets/img/blog1.jpg" alt="blog1">
-                <span class="st-link-hover"><i class="fas fa-link"></i></span>
-              </a>
-              <div class="st-post-info">
-                <h2 class="st-post-title"><a href="blog-details-right-sidebar.html">Working in emergency medicine</a></h2>
-                <div class="st-post-meta">
-                  <span class="st-post-date">Aug 21, 2020</span>
-                  <span>
-                    Posted by:<a href="#" class="st-post-avatar">
-                      <span class="st-post-avatar-text"> James Lewis</span>
-                    </a>
-                  </span>
-                </div>
-                <div class="st-post-text">Lorem Ipsum is simply dummy text of the print ing and typesetting industry. lorem Ipsum the industry's standard dummy text.</div>
-              </div>
-              <div class="st-post-footer">
-                <a href="blog-details-right-sidebar.html" class="st-btn st-style2 st-color1 st-size-medium">Read More</a>
-              </div>
-            </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
-          </div><!-- .col -->
-          <div class="col-lg-4">
-            <div class="st-post st-style3">
-              <a href="blog-details-right-sidebar.html" class="st-post-thumb st-link-hover-wrap st-zoom">
-                <img class="st-zoom-in" src="assets/img/blog2.jpg" alt="blog1">
-                <span class="st-link-hover"><i class="fas fa-link"></i></span>
-              </a>
-              <div class="st-post-info">
-                <h2 class="st-post-title"><a href="blog-details-right-sidebar.html">Individual treatment & assistance</a></h2>
-                <div class="st-post-meta">
-                  <span class="st-post-date">Aug 22, 2020</span>
-                  <span>
-                    Posted by: <a href="#" class="st-post-avatar">
-                      <span class="st-post-avatar-text"> William Juarez</span>
-                    </a>
-                  </span>
-                </div>
-                <div class="st-post-text">Lorem Ipsum is simply dummy text of the print ing and typesetting industry. lorem Ipsum the industry's standard dummy text.</div>
-              </div>
-              <div class="st-post-footer">
-                <a href="blog-details-right-sidebar.html" class="st-btn st-style2 st-color1 st-size-medium">Read More</a>
-              </div>
-            </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
-          </div><!-- .col -->
-          <div class="col-lg-4">
-            <div class="st-post st-style3">
-              <a href="blog-details-right-sidebar.html" class="st-post-thumb st-link-hover-wrap st-zoom">
-                <img class="st-zoom-in" src="assets/img/blog3.jpg" alt="blog1">
-                <span class="st-link-hover"><i class="fas fa-link"></i></span>
-              </a>
-              <div class="st-post-info">
-                <h2 class="st-post-title"><a href="blog-details-right-sidebar.html">Child’s first hospital visit</a></h2>
-                <div class="st-post-meta">
-                  <span class="st-post-date">Aug 23, 2020</span>
-                  <span>
-                    Posted by:<a href="#" class="st-post-avatar">
-                      <span class="st-post-avatar-text"> Albert Brian</span>
-                    </a>
-                  </span>
-                </div>
-                <div class="st-post-text">Lorem Ipsum is simply dummy text of the print ing and typesetting industry. lorem Ipsum the industry's standard dummy text.</div>
-              </div>
-              <div class="st-post-footer">
-                <a href="blog-details-right-sidebar.html" class="st-btn st-style2 st-color1 st-size-medium">Read More</a>
-              </div>
-            </div>
-          </div><!-- .col -->
-        </div>
-      </div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
-    </section>
-    <!-- End Blog Section -->
+   
 
-    <!-- Start Logo Carousel -->
-    <div class="st-gray-bg">
-      <div class="st-height-b120 st-height-lg-b80"></div>
-      <div class="container">
-        <div class="st-slider st-style2 st-pricing-wrap">
-          <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"  data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="5">
-            <div class="slick-wrapper">
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-orange-box">
-                  <img src="assets/img/client1.png" alt="client1">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-blue-box">
-                  <img src="assets/img/client2.png" alt="client2">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-red-box">
-                  <img src="assets/img/client3.png" alt="client3">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-green-box">
-                  <img src="assets/img/client4.png" alt="client4">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-dip-blue-box">
-                  <img src="assets/img/client5.png" alt="client5">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-orange-box">
-                  <img src="assets/img/client1.png" alt="client1">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-blue-box">
-                  <img src="assets/img/client2.png" alt="client2">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-red-box">
-                  <img src="assets/img/client3.png" alt="client3">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-green-box">
-                  <img src="assets/img/client4.png" alt="client4">
-                </div>
-              </div><!-- .slick-slide-in -->
-              <div class="slick-slide-in">
-                <div class="st-logo-carousel st-style1 st-dip-blue-box">
-                  <img src="assets/img/client5.png" alt="client5">
-                </div>
-              </div><!-- .slick-slide-in -->
-            </div>
-          </div><!-- .slick-container -->
-          <div class="pagination st-style1 st-flex st-hidden"></div> <!-- If dont need Pagination then add class .st-hidden -->
-          <div class="swipe-arrow st-style1"> <!-- If dont need navigation then add class .st-hidden -->
-            <div class="slick-arrow-left"><i class="fa fa-chevron-left"></i></div>
-            <div class="slick-arrow-right"><i class="fa fa-chevron-right"></i></div>
-          </div>
-        </div><!-- .st-slider -->
-      </div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
-    </div>
-    <!-- End Logo Carousel -->
+    
 
-    <!-- Start Contact Section -->
-    <section class="st-shape-wrap" id="contact">
-      <div class="st-shape1"><img src="assets/img/shape/contact-shape1.svg" alt="shape1"></div>
-      <div class="st-shape2"><img src="assets/img/shape/contact-shape2.svg" alt="shape2"></div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
-      <div class="container">
-        <div class="st-section-heading st-style1">
-          <h2 class="st-section-heading-title">Stay connect with us</h2>
-          <div class="st-seperator">
-            <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s"></div>
-            <div class="st-seperator-center"><img src="assets/img/icons/4.png" alt="icon"></div>
-            <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
-          </div>
-          <div class="st-section-heading-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum the industry's standard dummy text.</div>
-        </div>
-        <div class="st-height-b40 st-height-lg-b40"></div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1">
-            <div id="st-alert"></div>
-            <form action="assets/php/mail.php" class="row st-contact-form st-type1" method="post"  id="contact-form">
-              <div class="col-lg-6">
-                <div class="st-form-field st-style1">
-                  <label>Full Name</label>
-                  <input type="text" id="name" name="name" placeholder="Jhon Doe" required>
-                </div>
-              </div><!-- .col -->
-              <div class="col-lg-6">
-                <div class="st-form-field st-style1">
-                  <label>Email Address</label> 
-                  <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
-                </div>
-              </div><!-- .col -->
-              <div class="col-lg-6">
-                <div class="st-form-field st-style1">
-                  <label>Subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="Write subject" required>
-                </div>
-              </div><!-- .col -->
-              <div class="col-lg-6">
-                <div class="st-form-field st-style1">
-                  <label>Phone</label>      
-                  <input type="text" id="phone" name="phone" placeholder="+00 376 12 465" required>
-                </div>
-              </div><!-- .col -->
-              <div class="col-lg-12">
-                <div class="st-form-field st-style1">
-                  <label>Your Message</label>      
-                  <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Write something here..." required></textarea>
-                </div>
-              </div><!-- .col -->
-              <div class="col-lg-12">
-                <div class="text-center">
-                  <div class="st-height-b10 st-height-lg-b10"></div>
-                  <button class="st-btn st-style1 st-color1 st-size-medium" type="submit" id="submit" name="submit">Send message</button>
-                </div>
-              </div><!-- .col -->
-            </form>
-          </div><!-- .col -->
-        </div>
-      </div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
-    </section>
-    <!-- End Contact Section -->
+    
     
     <div class="st-google-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd" allowfullscreen></iframe>
@@ -1829,5 +2055,28 @@
   <script src="assets/js/textRotate.min.js"></script>
   <script src="assets/js/select2.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    const tabScroll = document.querySelector('.tab-scroll');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+  
+    const scrollAmount = 150; // adjust for how much you want to scroll
+  
+    leftArrow.addEventListener('click', () => {
+      tabScroll.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+  
+    rightArrow.addEventListener('click', () => {
+      tabScroll.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  
+  
 </body>
 </html>
