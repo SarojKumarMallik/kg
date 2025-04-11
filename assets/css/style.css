@@ -7114,3 +7114,122 @@ RTL - Right to Left
     padding-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+/* Added Css */
+
+    
+.cta {
+  background: #0096d6;
+  color: #fff;
+  background-size: cover;
+  padding: 60px 0;
+  margin-top: 50px;
+}
+
+.cta h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #fff;
+  color: #0096d6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.st-feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.st-feature-list li {
+  font-size: 16px;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 30px;
+}
+
+.st-feature-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #0096d6;
+  font-weight: bold;
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.tab-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: none; 
+}
+
+.tab-scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.arrow-btn {
+  background-color: #0096d6;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.arrow-btn:hover {
+  background-color: #0096d6;
+  transform: scale(1.05);
+}
+
+.left-arrow {
+  margin-left: 5px;
+ position: relative;
+ right: 8px;
+}
+
+.right-arrow {
+  position: relative;
+  margin-right: 5px;
+  left: 9px;
+  
+}
+  
