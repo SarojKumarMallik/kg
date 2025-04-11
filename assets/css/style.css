@@ -1752,7 +1752,8 @@ hr {
 
 .st-btn.st-style1.st-color3 {
   background: #fff;
-  color: #222;
+  color: white;
+  background-color: #0096d6;
 }
 
 .st-btn.st-style1.st-color4 {
